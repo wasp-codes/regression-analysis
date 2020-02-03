@@ -10,8 +10,7 @@ Similarly, evaluation metrics used for regression differ from classification. A 
 
 When numeric input data features have values with different ranges, each feature should be scaled independently to the same range.
 
-If there is not much training data, one technique is to prefer a small network with few hidden layers to avoid overfitting.
-
+If there is not much training data, one technique is to prefer a small network with few hidden layers to avoid overfitting.\
 Early stopping is a useful technique to prevent overfitting.
 
 # References
