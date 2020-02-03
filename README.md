@@ -15,12 +15,14 @@ From Tensorflow [1]:
 
 ## Dataset
 Tide and current data for northern hemisphere can be found at [2]
+The World Bank provides a Climate Data API [3].
 
 ## Code
-For real-time-tide-readings.py, the text response can be character limited using:
+For real-time-tide-readings.py, the text response can be character limited using the following, which can possibly be used to print specific things from the api, like the name of the port:
+
 print(response.text[:100])
-This can possibly be used to print specific things from the api, like the name of the port.
 
 ## References
 1. Available from: https://www.tensorflow.org/tutorials/keras/regression
 2. Available from: https://tidesandcurrents.noaa.gov/astronomical.html
+3. Available from: https://datahelpdesk.worldbank.org/knowledgebase/articles/902061-climate-data-api
