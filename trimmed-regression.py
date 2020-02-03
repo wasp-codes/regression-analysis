@@ -24,7 +24,7 @@ dataset_path
 
 # Import it using pandas
 column_names = ['MPG','Cylinders','Displacement','Horsepower','Weight',
-                'Acceleration', 'Model Year', 'Origin', 'Name']
+                'Acceleration', 'Model Year', 'Origin']
 raw_dataset = pd.read_csv(dataset_path, names=column_names,
                       na_values = "?", comment='\t',
                       sep=" ", skipinitialspace=True)
