@@ -1,6 +1,10 @@
 # Regression Analysis 
 Analysis of tides in Brisbane
 
+## Abbreviations
+1. MAE: Mean Absolute Error
+2. MSE: Mean Squared Error
+
 ## Literature Review
 From Tensorflow [1]:
 1. Mean Squared Error (MSE) is a common loss function used for regression problems (different loss functions are used for classification problems).
