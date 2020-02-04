@@ -29,6 +29,8 @@ For real-time-tide-readings.py, the text response can be character limited using
 
 print(response.text[:100])
 
+Pandas can be used to read json [10] [11]
+Reading a json array [12]
 
 # Changelog
 Changelog guide at [7]
@@ -43,3 +45,6 @@ Changelog guide at [7]
 7. Available from: https://keepachangelog.com/en/1.0.0/
 8. Available from: http://swcarpentry.github.io/web-data-python/01-getdata/
 9. Available from: https://www.usno.navy.mil/USNO/astronomical-applications/data-services
+10. Available from: https://www.marsja.se/how-to-read-and-write-json-files-using-python-and-pandas/
+11. Available from: https://pandas.pydata.org/docs/user_guide/io.html#json
+12. Available in: https://stackoverflow.com/questions/48189684/how-to-parse-json-array-of-objects-in-python
