@@ -9,7 +9,7 @@ response = requests.get(url)
 if response.status_code != 200:
     print('Failed to get data:', response.status_code)
 else:
-    print(response.text[5000:6000])
+    print(response.text[:30])
 
 df = pd.read_csv('http://opendata.tmr.qld.gov.au/southport.txt', sep=" ", header=None, skiprows=18, engine='python')
 df = df.loc[:,[0,2]]
