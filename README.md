@@ -16,13 +16,15 @@ From Tensorflow [1]:
 Use Pandas to normalize data [4]
 
 ## Dataset
-Tide and current data for northern hemisphere can be found at [2]
+Tide and current data for northern hemisphere [2]
 The World Bank provides a Climate Data API [3].
 Farmsense moon api [5]
 Mateomatics moon API [6]
-
+Naval Oceanography Portal [9]
 
 ## Code
+Method for API response from [8]
+
 For real-time-tide-readings.py, the text response can be character limited using the following, which can possibly be used to print specific things from the api, like the name of the port:
 
 print(response.text[:100])
@@ -39,3 +41,5 @@ Changelog guide at [7]
 5. Available from: http://www.farmsense.net/api/
 6. Available from https://www.meteomatics.com/en/api/available-parameters/moon/#moon_phase
 7. Available from: https://keepachangelog.com/en/1.0.0/
+8. Available from: http://swcarpentry.github.io/web-data-python/01-getdata/
+9. Available from: https://www.usno.navy.mil/USNO/astronomical-applications/data-services
