@@ -21,7 +21,7 @@ df = pd.read_csv(readingsUrl, sep="  ", names=columnNames, parse_dates=['Time/Da
 print(df)
 
 # plots
-df.loc[11500:11520].plot(x='Time/Date', y='Water Level in m LAT', kind='line')
-df.loc[10500:11520].plot(x='Time/Date', y='Water Level in m LAT', kind='line')
-df.loc[:11520].plot(x='Time/Date', y='Water Level in m LAT', kind='line')
+df.loc[11500:11520].plot(x='Time/Date', y='Water Level in m LAT', title='Minute-level Readings', kind='line')
+df.loc[10500:11520].plot(x='Time/Date', y='Water Level in m LAT', title='Hour-level Readings', kind='line')
+df.loc[:11520].plot(x='Time/Date', y='Water Level in m LAT', title='Day-level Readings', kind='line')
 plt.show()
