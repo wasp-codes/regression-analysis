@@ -14,9 +14,10 @@ else:
 
 readingsUrl = 'http://opendata.tmr.qld.gov.au/Half_Tide.txt'
 columnNames = ['Time/Date', 'Water Level in m LAT', 'N/A 1', 'N/A 2', 'N/A 3']
-lambdaParser = lambda x: pd.datetime.strptime(x, '%d%m%Y%H%M')
+lambdaParser = lambda x: datetime.datetime.strptime(x, '%d%m%Y%H%M')
 
-df = pd.read_csv(readingsUrl, sep="  ", names=columnNames, parse_dates=['Time/Date'], date_parser=lambdaParser, header=None, skiprows=5, engine='python')
+df = pd.read_csv(readingsUrl, sep="  ", names=columnNames, header=None, skiprows=5, engine='python')
+df['Time/Date'] = pd.to_datetime(df['Time/Date'].str.strip(), format='%w%m%Y%H%M')
 
 print(df)
 
