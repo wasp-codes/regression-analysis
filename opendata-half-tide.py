@@ -16,7 +16,6 @@ else:
 
 readingsUrl = 'http://opendata.tmr.qld.gov.au/Half_Tide.txt'
 columnNames = ['Time/Date', 'Water Level in m LAT', 'N/A 1', 'N/A 2', 'N/A 3']
-#dateParse = lambda x: dt.datetime.strptime(x, '%d%m%Y%H%M')
 
 df = pd.read_csv(readingsUrl, sep="  ", names=columnNames, header=None, dtype= {'Time/Date': 'str'}, skiprows=5, engine='python')
 df['Time/Date'] = df['Time/Date'].apply(lambda x: datetime.strptime(x, '%d%m%Y%H%M'))
