@@ -24,7 +24,7 @@ df['Time/Date'] = df['Time/Date'].apply(lambda x: datetime.strptime(x, '%d%m%Y%H
 print(df)
 
 # plots
-df.loc[11500:11520].plot(x='Time/Date', y='Water Level in m LAT', title='Minute-level Readings', kind='line')
-df.loc[10500:11520].plot(x='Time/Date', y='Water Level in m LAT', title='Hour-level Readings', kind='line')
-df.loc[:11520].plot(x='Time/Date', y='Water Level in m LAT', title='Day-level Readings', kind='line')
+df.loc[11500:11520].plot(x='Time/Date', y='Water Level in m LAT', title='Minutecast', kind='line')
+df.loc[10500:11520].plot(x='Time/Date', y='Water Level in m LAT', title='Hourly', kind='line')
+df.loc[:11520].plot(x='Time/Date', y='Water Level in m LAT', title='Daily', kind='line')
 plt.show()
