@@ -23,4 +23,5 @@ print(df)
 # plots
 df.loc[11500:11520].plot(x='Time/Date', y='Water Level in m LAT', kind='line')
 df.loc[10500:11520].plot(x='Time/Date', y='Water Level in m LAT', kind='line')
+df.loc[:11520].plot(x='Time/Date', y='Water Level in m LAT', kind='line')
 plt.show()
