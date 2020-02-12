@@ -13,8 +13,9 @@ else:
 dataframe = json.loads(response.text)
 
 #print(dataframe['daily']['data'])
-#for moonPhase in dataframe['daily']['data']:
- #if '1234' in kid['ssn']:
-    #print (moonPhase['moonPhase'])
+for moonPhase in dataframe['daily']['data']:
+    #if '<'time.time()'' in moonPhase['time']:
+    if moonPhase['time'] < time.time():
+        print (moonPhase['moonPhase'])
 
-print(dataframe['currently']['summary'])
+#print(dataframe['currently']['summary'])
