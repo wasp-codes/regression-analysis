@@ -1,5 +1,4 @@
 import requests
-import pandas as pd
 import json
 
 url = 'https://api.darksky.net/forecast/363a3ec44465121cebe6039f0262266b/-27.4698,153.0251'
@@ -10,13 +9,8 @@ if response.status_code != 200:
 else:
     print(response.text)
 
-dataframe = pd.read_json(response.text)
+dataframe = json.loads(response.text)
 
-dataframe = dataframe.astype(str)
-
-print(dataframe)
-
-readValue = json.loads(response.text)
-#print(readValue['currently'])
-for read in readValue:
-    print(read['timezone'])
+print(dataframe['daily']['data'])
+#for moonPhase in dataframe['daily']['data']:
+    #print (moonPhase['moonPhase'])
