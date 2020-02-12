@@ -12,4 +12,11 @@ else:
     
 for extractValue in dataframe['daily']['data']:
     if extractValue['time'] < time.time():
-        print(extractValue['moonPhase'])
+        moonPhaseValue = extractValue['moonPhase']
+
+if moonPhaseValue == 0 or moonPhaseValue == 1:
+    print("Danger")
+else:
+    print("Safe")
+
+print(moonPhaseValue)
