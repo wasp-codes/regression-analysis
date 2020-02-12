@@ -1,8 +1,7 @@
 import requests
 import json
-import time
 
-url = 'https://api.darksky.net/forecast/363a3ec44465121cebe6039f0262266b/-27.4698,153.0251'
+url = 'https://api.nytimes.com/svc/topstories/v2/world.json?api-key=tPvfWWnLYnfZsYXS1AL9sQq0zzqz25wg'
 
 response = requests.get(url)
 if response.status_code != 200:
@@ -16,4 +15,9 @@ else:
     #if moonPhase['time'] < time.time():
         #print (moonPhase['moonPhase'])
 
-print(dataframe['currently']['summary'])
+#print(dataframe['results'])
+
+for extractValue in dataframe['results']:
+    print(extractValue['title'])
+    print("Abstract:", extractValue['abstract'])
+    print('\n')
