@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = 'https://api.nytimes.com/svc/topstories/v2/world.json?api-key=tPvfWWnLYnfZsYXS1AL9sQq0zzqz25wg'
+url = 'http://newsapi.org/v2/top-headlines?&sources=bbc-news&&apiKey=486ad551576442e788d9d3e7672919b0'
 
 response = requests.get(url)
 if response.status_code != 200:
@@ -21,3 +21,4 @@ for extractValue in dataframe['results']:
     print(extractValue['title'])
     print(extractValue['abstract'])
     print('\n')
+

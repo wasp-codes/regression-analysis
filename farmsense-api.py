@@ -15,3 +15,4 @@ else:
     readValue = json.loads(response.text)
     for read in readValue:
         print(read['Phase'])
+        print(read['Illumination'])

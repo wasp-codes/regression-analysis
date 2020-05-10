@@ -20,3 +20,4 @@ else:
     print("Safe")
 
 print(moonPhaseValue)
+ 
